@@ -36,7 +36,7 @@ export class LoginComponent implements OnInit {
           if(result.message=="Success"){
             
             localStorage.setItem('token',result.token);
-            this._route.navigate(['/menu']);
+            this._route.navigate(['/side-nav']);
           }else {
             alert("User name and password incorrect")
             console.log(result);

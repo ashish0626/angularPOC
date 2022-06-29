@@ -16,12 +16,17 @@ import {MatTabsModule} from '@angular/material/tabs';
 import { MenutoolComponent } from './menutool/menutool.component';
 import { EmployeedataComponent } from './employeedata/employeedata.component';
 import { TokenInterceptor } from './shared/token-interceptor';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatIconModule} from '@angular/material/icon';
+import{MatListModule} from '@angular/material/list';
+import { SideNavComponent } from './side-nav/side-nav.component';
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     MenutoolComponent,
-    EmployeedataComponent
+    EmployeedataComponent,
+    SideNavComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +41,10 @@ import { TokenInterceptor } from './shared/token-interceptor';
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    MatTabsModule
+    MatTabsModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule
   ],
   providers: [{
     provide:HTTP_INTERCEPTORS,

@@ -51,5 +51,12 @@
         </mat-card>
       </div>
     </mat-tab>
+    <mat-tab label="Logout"> 
+      <div fxLayoutAlign="center center" fxFill class="main-div" (click)="logout()">
+        <mat-card fxFlex="25">
+          <button mat-stroked-button color="accent" (click)="logout()">Are you sure</button>
+        </mat-card>
+      </div>
+    </mat-tab>
   </mat-tab-group>
 </div>

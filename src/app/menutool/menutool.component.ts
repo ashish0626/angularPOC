@@ -84,4 +84,7 @@ export class MenutoolComponent implements OnInit {
       }
     })
   }
+  public logout(){
+    this._route.navigate(['/login']);
+  }
 }
